@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    // Clase base para todos los controladores de la API
     [ApiController]
     [Route("api/[controller]")]
     public abstract class BaseController : ControllerBase
