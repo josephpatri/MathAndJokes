@@ -1,4 +1,5 @@
 ﻿using Application.DTOs;
+using Application.Features.Commands;
 using AutoMapper;
 using Domain.Entities;
 
@@ -10,6 +11,7 @@ namespace Application.Mappings
         {
             #region Commands
 
+            CreateMap<CreateJokes, Joke>();
 
             #endregion
 

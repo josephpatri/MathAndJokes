@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.Features.Queries
 {
-    public class GetJokeWithOptionalParam : IRequest<Response<JokeDto>>
+    public record GetJokeWithOptionalParam : IRequest<Response<JokeDto>>
     {
         public string? param { get; set; }
     }

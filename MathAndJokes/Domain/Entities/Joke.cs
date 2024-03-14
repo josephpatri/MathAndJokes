@@ -8,7 +8,6 @@ namespace Domain.Entities
 {
     public class Joke : BaseEntity
     {
-        public int Id { get; set; }
         public string JokeName { get; set; }
         public string JokeDescription { get; set; }
         public string JokeOwner { get; set; }

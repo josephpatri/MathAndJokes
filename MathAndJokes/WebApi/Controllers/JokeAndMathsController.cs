@@ -3,6 +3,7 @@ using Application.Features.Queries;
 using Swashbuckle.AspNetCore.Annotations;
 using Application.DTOs;
 using System.Threading.Tasks;
+using Application.Features.Commands;
 
 namespace WebApi.Controllers
 {
@@ -19,6 +20,13 @@ namespace WebApi.Controllers
         public async Task<IActionResult> GetAJoke([FromQuery]string? param = null)
         {
             return Ok(await Mediator.Send(new GetJokeWithOptionalParam { param = param }));
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> CreateAJoke(CreateJokes command)
+        {
+            return Ok(await Mediator.Send(command));
         }
     }
 }
