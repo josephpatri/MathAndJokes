@@ -1,12 +1,7 @@
 ﻿using Application.DTOs;
-using Application.Wrappers;
-using AutoMapper;
-using MediatR;
-using System.Net.Http;
-using System.Net;
-using System;
-using System.Net.Http.Json;
 using Application.Services;
+using Application.Wrappers;
+using MediatR;
 
 namespace Application.Features.Queries
 {
@@ -20,9 +15,10 @@ namespace Application.Features.Queries
         private readonly HttpClient _httpClient;
         private readonly GetApiResponses _api;
 
-        public GetJokeHandler(IHttpClientFactory httpClientFactory)
+        public GetJokeHandler(IHttpClientFactory httpClientFactory, GetApiResponses api)
         {
             _httpClient = httpClientFactory.CreateClient();
+            _api = api;
         }
 
         public async Task<Response<JokeDto>> Handle(GetJokeWithOptionalParam request, CancellationToken cancellationToken)
@@ -30,7 +26,7 @@ namespace Application.Features.Queries
             if (String.IsNullOrEmpty(request.param))
             {
                 var random = new Random();
-                if (random.Next(1,2) == (int)Enums.JokeTypes.Dad)
+                if (random.Next(1,3) == (int)Enums.JokeTypes.Dad)
                 {
                     return new Response<JokeDto>(await _api.GetJokeDad());
                 }

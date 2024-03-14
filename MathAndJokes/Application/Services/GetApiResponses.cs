@@ -39,8 +39,7 @@ namespace Application.Services
             }
             else
             {
-                // Manejo del error
-                throw new Exception("Error al obtener el chiste de Dad.");
+                throw new Exception("Error getting dad joke");
             }
         }
 
@@ -69,8 +68,7 @@ namespace Application.Services
             }
             else
             {
-                // Manejo del error
-                throw new Exception("Error al obtener el chiste de Chuck.");
+                throw new Exception("Error getting Chuck joke");
             }
         }
     }
