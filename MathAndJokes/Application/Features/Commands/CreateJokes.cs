@@ -3,11 +3,6 @@ using Application.Wrappers;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Features.Commands
 {
@@ -15,6 +10,7 @@ namespace Application.Features.Commands
     {
         public string JokeName { get; set; }
         public string JokeDescription { get; set; }
+        public string JokeOwner { get; set; }
     }
 
     public class CreateCustomerHandler : IRequestHandler<CreateJokes, Response<int>>

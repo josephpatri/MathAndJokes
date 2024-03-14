@@ -22,10 +22,13 @@ namespace Persistence.Context
                 {
                     case EntityState.Modified:
                         joke.Entity.Modified = DateTime.UtcNow;
+                        joke.Entity.ModifiedBy = "Jokes Owner";
                         break;
                     case EntityState.Added:
                         joke.Entity.Modified = DateTime.UtcNow;
                         joke.Entity.Created = DateTime.UtcNow;
+                        joke.Entity.CreatedBy = "Jokes Owner";
+                        joke.Entity.ModifiedBy = "Jokes Owner";
                         break;
                 }
             }

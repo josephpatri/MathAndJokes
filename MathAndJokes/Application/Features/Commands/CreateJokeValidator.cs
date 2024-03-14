@@ -1,13 +1,8 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Features.Commands
 {
-    internal class CreateJokeValidator : AbstractValidator<CreateJokes>
+    public class CreateJokeValidator : AbstractValidator<CreateJokes>
     {
         public CreateJokeValidator()
         {
@@ -20,6 +15,11 @@ namespace Application.Features.Commands
                 .NotEmpty()
                 .MinimumLength(5)
                 .MaximumLength(500);
+
+            RuleFor(p => p.JokeOwner)
+                .NotEmpty()
+                .MinimumLength(5)
+                .MaximumLength(50);
         }
     }
 }
