@@ -19,6 +19,7 @@ namespace Application
             });
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
             services.AddTransient<GetApiResponses>();
+            services.AddTransient<MathCalcs>();
             services.AddHttpClient();
         }
     }

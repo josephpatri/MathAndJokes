@@ -13,12 +13,12 @@ namespace Application.Features.Commands
         public string JokeOwner { get; set; }
     }
 
-    public class CreateCustomerHandler : IRequestHandler<CreateJokes, Response<int>>
+    public class CreateJokesHandler : IRequestHandler<CreateJokes, Response<int>>
     {
         private readonly IBaseRepoAsync<Joke> _repo;
         private readonly IMapper _mapper;
 
-        public CreateCustomerHandler(IBaseRepoAsync<Joke> repo, IMapper mapper)
+        public CreateJokesHandler(IBaseRepoAsync<Joke> repo, IMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
