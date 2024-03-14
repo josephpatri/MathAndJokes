@@ -4,14 +4,102 @@
     "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\WebApi.csproj",
-        "projectName": "WebApi",
-        "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\sistemas.madrid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sistemas.madrid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/SFCGrupoIberostar/_packaging/NugetSFC/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\sistemas.madrid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sistemas.madrid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,7 +130,177 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\sistemas.madrid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sistemas.madrid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/SFCGrupoIberostar/_packaging/NugetSFC/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Application\\Application.csproj"
+              },
+              "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.28, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.28, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.28, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\sistemas.madrid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sistemas.madrid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/SFCGrupoIberostar/_packaging/NugetSFC/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Application\\Application.csproj"
+              },
+              "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\sistemas.madrid\\source\\repos\\practicaApi\\MathAndJokes\\Persistence\\Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.28, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.28, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
