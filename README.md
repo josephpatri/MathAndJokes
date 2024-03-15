@@ -6,7 +6,7 @@ Bienvenido a la API de MathAndJokes, un proyecto basado en .NET 6 que combina di
 
 - **Operaciones CRUD para Chistes**: Crear, Leer, Actualizar y Borrar chistes.
 - **Operaciones Matemáticas**: Realizar operaciones matemáticas simples como calcular el Mínimo Común Múltiplo (MCM) e incrementar números.
-- **Documentación Swagger**: Puntos finales de API completamente documentados para facilitar el uso y las pruebas.
+- **Documentación Swagger**: EndPoints de API completamente documentados para facilitar el uso y las pruebas.
 - **Validaciones Personalizadas y Manejo de Excepciones**: Garantiza la integridad de los datos y proporciona mensajes de error claros para una mejor depuración.
 - **Pruebas**: Cobertura de pruebas exhaustiva utilizando xUnit y Moq para garantizar la funcionalidad y confiabilidad.
 
